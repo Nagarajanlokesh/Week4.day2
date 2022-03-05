@@ -28,8 +28,6 @@ public class Ass1DraggableExample {
 		driver.switchTo().frame(0);
 		
 		WebElement Draggable = driver.findElement(By.id("draggable"));
-		
-		
 		//dragAndDropBy(WebElement, x, y)This will be used in both situations - If we know or don't know the taget location 
 		builder.dragAndDropBy(Draggable, 100, 50).perform();
 		
